@@ -1,0 +1,6 @@
+{
+  "name": "Muhammad Coovadia Psychometrist",
+  "description": "HPCSA Registered Psychometrist in Norwood, Johannesburg. In-person paper-based psychometric assessments for Grade 9 subject choice and tertiary career guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

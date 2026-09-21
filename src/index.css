@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+@import "./css/style.css";
+
+@layer base {
+  :root {
+    --color-charcoal: #2b2b2b;
+    --color-charcoal-dark: #1b1b1b;
+    --color-teal: #0c5253;
+    --color-teal-light: #126d6f;
+    --color-teal-dark: #073a3b;
+    --color-offwhite: #ededed;
+    --color-paper: #fbfbfb;
+    --color-border: rgba(43, 43, 43, 0.16);
+  }
+
+  body {
+    background-color: var(--color-offwhite);
+    color: var(--color-charcoal);
+    font-family: 'Glacial Indifference', 'Teachers', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Glacial Indifference', 'Teachers', sans-serif;
+    letter-spacing: -0.015em;
+    font-weight: 700;
+    color: inherit;
+  }
+
+  :focus-visible {
+    outline: 2px solid #0c5253;
+    outline-offset: 3px;
+  }
+}
+
+/* Halftone / Dot Matrix Patterns */
+.bg-dot-matrix {
+  background-image: radial-gradient(rgba(12, 82, 83, 0.10) 1.5px, transparent 1.5px);
+  background-size: 18px 18px;
+}
+
+.bg-dot-matrix-dark {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1.5px, transparent 1.5px);
+  background-size: 18px 18px;
+}
+
+.bg-dot-matrix-subtle {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.04) 1.5px, transparent 1.5px);
+  background-size: 16px 16px;
+}
+
+/* Asymmetrical Curved Corner Panels - Signature brand geometry */
+.panel-curved {
+  border-top-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.panel-curved-lg {
+  border-top-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.panel-curved-reverse {
+  border-top-right-radius: 28px;
+  border-bottom-left-radius: 28px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* Angled corner chips */
+.chip-angled {
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
+}
+
+.chip-angled-sm {
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
+}
+
+.font-blanka {
+  font-family: 'Blanka', 'Glacial Indifference', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+/* Touch targets >= 44px on mobile */
+.tap-target {
+  min-height: 44px;
+  min-width: 44px;
+}

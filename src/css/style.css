@@ -1,0 +1,345 @@
+/* ==========================================================================
+   MUHAMMAD COOVADIA PSYCHOMETRIST — CORE BRAND STYLESHEET
+   HPCSA Registration: PMT 007523 | Practice PR: 0071253
+   Brand Aesthetic: Asymmetrical Teal (#0c5253) & Charcoal (#2b2b2b),
+   Light-Grey Halftone Dot Matrix, Angled Corner Geometry, Glacial Indifference.
+   ========================================================================== */
+
+/* Glacial Indifference Webfont Fallback & Direct Declarations */
+@font-face {
+  font-family: 'Glacial Indifference';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Glacial Indifference'), local('GlacialIndifference-Regular'),
+       url('https://fonts.cdnfonts.com/s/14883/GlacialIndifference-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Glacial Indifference Bold'), local('GlacialIndifference-Bold'),
+       url('https://fonts.cdnfonts.com/s/14883/GlacialIndifference-Bold.woff') format('woff');
+}
+
+/* Blanka Geometric Monogram Webfont */
+@font-face {
+  font-family: 'Blanka';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Blanka'), local('Blanka-Regular'),
+       url('https://fonts.cdnfonts.com/s/14983/Blanka-Regular.woff') format('woff');
+}
+
+/* 2. ROOT BRAND DESIGN TOKENS */
+:root {
+  --teal-primary: #0c5253;
+  --teal-hover: #126d6f;
+  --teal-dark: #073536;
+  --teal-tint: #e6f0f0;
+  --teal-border: rgba(12, 82, 83, 0.28);
+
+  --charcoal-primary: #2b2b2b;
+  --charcoal-hover: #3a3a3a;
+  --charcoal-dark: #1b1b1b;
+  --charcoal-tint: #f3f3f3;
+
+  --bg-offwhite: #ededed;
+  --bg-paper: #fbfbfb;
+  --bg-card: #ffffff;
+
+  --border-subtle: rgba(43, 43, 43, 0.12);
+  --border-strong: rgba(43, 43, 43, 0.24);
+
+  --font-brand: 'Glacial Indifference', 'Teachers', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-blanka: 'Blanka', 'Glacial Indifference', sans-serif;
+}
+
+/* 3. BASE RESET & ACCESSIBILITY */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-brand);
+  background-color: var(--bg-offwhite);
+  color: var(--charcoal-primary);
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-offwhite);
+  color: var(--charcoal-primary);
+  line-height: 1.6;
+  font-size: 16px;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--teal-primary);
+  color: #ffffff;
+}
+
+/* Focus Rings (P2 Anti-Slop Requirement) */
+:focus-visible {
+  outline: 2px solid var(--teal-primary);
+  outline-offset: 3px;
+}
+
+/* Headings with deliberate geometric tracking */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-brand);
+  color: inherit;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 0;
+  letter-spacing: -0.015em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  max-width: 72ch;
+}
+
+/* Monogram font class */
+.font-blanka {
+  font-family: var(--font-blanka);
+  letter-spacing: 0.08em;
+}
+
+/* 4. HALFTONE DOT MATRIX TEXTURES */
+.bg-dot-matrix {
+  background-image: radial-gradient(rgba(12, 82, 83, 0.10) 1.5px, transparent 1.5px);
+  background-size: 18px 18px;
+}
+
+.bg-dot-matrix-subtle {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.04) 1.5px, transparent 1.5px);
+  background-size: 16px 16px;
+}
+
+.bg-dot-matrix-dark {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1.5px, transparent 1.5px);
+  background-size: 18px 18px;
+}
+
+/* 5. ASYMMETRICAL BRAND GEOMETRY */
+/* Custom curved corners: Top-left / Bottom-right cuts */
+.panel-curved {
+  border-top-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.panel-curved-lg {
+  border-top-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.panel-curved-reverse {
+  border-top-right-radius: 28px;
+  border-bottom-left-radius: 28px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* Angled corner chips */
+.chip-angled {
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
+}
+
+.chip-angled-sm {
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
+}
+
+.chip-angled-reverse {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%);
+}
+
+/* 6. TACTILE INTERACTION SYSTEM (P1/P2 Anti-Slop: No blurry glow or floating cards) */
+.card-tactile {
+  background-color: var(--bg-paper);
+  border: 1px solid var(--border-strong);
+  box-shadow: 2px 2px 0px rgba(43, 43, 43, 0.12);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.card-tactile:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px rgba(12, 82, 83, 0.28);
+  border-color: var(--teal-primary);
+}
+
+.card-tactile-dark {
+  background-color: #242424;
+  border: 1px solid #3d3d3d;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.card-tactile-dark:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px rgba(12, 82, 83, 0.6);
+  border-color: #1a7e80;
+}
+
+/* Tactile Buttons */
+.btn-tactile-teal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--teal-primary);
+  color: #ffffff;
+  border: 1px solid var(--teal-dark);
+  box-shadow: 2px 2px 0px var(--teal-dark);
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  padding: 0.75rem 1.35rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
+  min-height: 44px;
+}
+
+.btn-tactile-teal:hover {
+  background-color: var(--teal-hover);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px var(--teal-dark);
+}
+
+.btn-tactile-teal:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px var(--teal-dark);
+}
+
+.btn-tactile-charcoal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--charcoal-primary);
+  color: #ffffff;
+  border: 1px solid var(--charcoal-dark);
+  box-shadow: 2px 2px 0px var(--charcoal-dark);
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  padding: 0.75rem 1.35rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
+  min-height: 44px;
+}
+
+.btn-tactile-charcoal:hover {
+  background-color: var(--charcoal-hover);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px var(--charcoal-dark);
+}
+
+.btn-tactile-charcoal:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px var(--charcoal-dark);
+}
+
+.btn-tactile-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: var(--charcoal-primary);
+  border: 1.5px solid var(--charcoal-primary);
+  box-shadow: 2px 2px 0px rgba(43, 43, 43, 0.2);
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.75rem 1.35rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease, color 0.12s ease;
+  min-height: 44px;
+}
+
+.btn-tactile-outline:hover {
+  background-color: var(--charcoal-primary);
+  color: #ffffff;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px rgba(43, 43, 43, 0.4);
+}
+
+/* 7. LAYOUT & ASYMMETRICAL RHYTHM */
+.container-editorial {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container-editorial {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+}
+
+/* Touch targets >= 44px on mobile */
+.tap-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Status / Credential Badge */
+.credential-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  background-color: var(--teal-primary);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Clinical Indicator */
+.clinical-bullet {
+  width: 7px;
+  height: 7px;
+  background-color: var(--teal-primary);
+  display: inline-block;
+  transform: rotate(45deg);
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}

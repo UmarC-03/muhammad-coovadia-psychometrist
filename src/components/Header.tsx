@@ -40,6 +40,8 @@ export const Header: React.FC = () => {
             <img 
               src={practiceLogo} 
               alt="Muhammad Coovadia Psychometrist Logo" 
+              width={128}
+              height={128}
               className="w-full h-full object-contain filter group-hover:brightness-110 transition-transform duration-200 group-hover:scale-105 drop-shadow-xs"
               id="header-brand-logo-img"
             />

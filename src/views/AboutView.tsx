@@ -30,7 +30,11 @@ export const AboutView: React.FC = () => {
               <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-xl overflow-hidden border-2 border-[#0c5253] shadow-lg bg-stone-900 group">
                 <img 
                   src={portraitImg} 
-                  alt="Muhammad Coovadia - Registered Psychometrist" 
+                  alt="Muhammad Coovadia - Registered Psychometrist in Norwood, Johannesburg" 
+                  width={176}
+                  height={176}
+                  loading="eager"
+                  decoding="async"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
@@ -39,6 +43,9 @@ export const AboutView: React.FC = () => {
               </span>
               <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
                 {PRACTICE_INFO.practitioner}
+                <span className="block text-sm sm:text-base font-medium text-stone-200 mt-1">
+                  HPCSA Registered Psychometrist | Norwood Practice
+                </span>
               </h1>
               <p className="text-xs text-stone-300 font-mono">
                 PMT {PRACTICE_INFO.hpcsaPMT} • PR {PRACTICE_INFO.practicePR}
@@ -92,7 +99,7 @@ export const AboutView: React.FC = () => {
                   His clinical and vocational exposure spans private practice assessment, corporate wellness counseling, and secondary/tertiary student academic support. This cross-sector experience provides a balanced perspective on how high school subject streams and matric APS scores translate into real-world tertiary qualifications and long-term career viability.
                 </p>
                 <p>
-                  Central to Muhammad&apos;s evaluation philosophy is the integration of empirical psychometric data with individual cultural and academic contexts. Psychometric testing is not treated as an automated sorting exercise, but as a deliberate diagnostic tool that empowers students and parents to make informed, high-stakes academic decisions.
+                  Central to Muhammad&apos;s evaluation philosophy is the integration of empirical psychometric data with individual cultural and academic contexts. Psychometric testing is not treated as an automated sorting exercise, but as a deliberate indicative evaluation that empowers students and parents to make informed, high-stakes academic decisions.
                 </p>
               </div>
 
@@ -120,7 +127,7 @@ export const AboutView: React.FC = () => {
               </h2>
 
               <p className="text-xs sm:text-sm text-stone-700 leading-relaxed">
-                Psychometry is a legally defined discipline under the Health Professions Act. While clinical psychologists diagnose and treat psychiatric psychopathology, registered psychometrists specialize in the objective measurement of cognitive faculties, scholastic aptitudes, and vocational interests using scientifically validated psychometric instruments.
+                Psychometry is a legally defined discipline under the Health Professions Act. While clinical psychologists evaluate and treat psychological conditions, registered psychometrists specialize in the objective measurement of cognitive faculties, scholastic aptitudes, and vocational interests using scientifically validated psychometric instruments.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
@@ -134,7 +141,7 @@ export const AboutView: React.FC = () => {
                 </div>
                 <div className="p-3 bg-[#f7f7f7] border border-stone-300 panel-curved text-xs">
                   <span className="font-bold text-[#2b2b2b] block mb-1">Actionable Reports</span>
-                  <span className="text-stone-600 text-[11px]">Formal written diagnostic document provided post-session.</span>
+                  <span className="text-stone-600 text-[11px]">Formal written indicative evaluation provided post-session.</span>
                 </div>
               </div>
             </div>

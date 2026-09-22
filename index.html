@@ -4,62 +4,177 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/assets/logo.png" />
-    <title>Muhammad Coovadia Psychometrist</title>
+    <link rel="apple-touch-icon" href="/assets/logo.png" />
+    
+    <title>Muhammad Coovadia Psychometrist | Norwood, Johannesburg</title>
     <meta name="description" content="HPCSA Registered Psychometrist (PMT 007523 / PR 0071253) in Norwood, Johannesburg. In-person, paper-based psychometric evaluations for Grade 9 FET subject choices and tertiary career guidance." />
-    <meta property="og:title" content="Muhammad Coovadia Psychometrist" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://muhammad-coovadia-psychometrist.vercel.app/" />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Muhammad Coovadia Psychometrist | Norwood, Johannesburg" />
     <meta property="og:description" content="HPCSA Registered Psychometrist (PMT 007523 / PR 0071253) in Norwood, Johannesburg. In-person, paper-based psychometric evaluations for Grade 9 FET subject choices and tertiary career guidance." />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Muhammad Coovadia Psychometrist" />
+    <meta property="og:locale" content="en_ZA" />
+    <meta property="og:url" content="https://muhammad-coovadia-psychometrist.vercel.app/" />
+    <meta property="og:image" content="https://muhammad-coovadia-psychometrist.vercel.app/portrait.jpg" />
+    <meta property="og:image:alt" content="Muhammad Coovadia – Registered Psychometrist in Norwood, Johannesburg" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="600" />
+
+    <!-- Twitter / X Card Metadata -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Muhammad Coovadia Psychometrist" />
-    <meta name="twitter:description" content="HPCSA Registered Psychometrist in Norwood, Johannesburg. In-person paper-based psychometric assessments." />
+    <meta name="twitter:title" content="Muhammad Coovadia Psychometrist | Norwood, Johannesburg" />
+    <meta name="twitter:description" content="HPCSA Registered Psychometrist in Norwood, Johannesburg. In-person, paper-based psychometric evaluations for Grade 9 subject choice and tertiary career guidance." />
+    <meta name="twitter:image" content="https://muhammad-coovadia-psychometrist.vercel.app/portrait.jpg" />
 
     <!-- Google Fonts Preconnect & Font Loading with font-display: swap -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
-    <!-- External Core Brand Stylesheet -->
+    <!-- Core Stylesheet -->
     <link rel="stylesheet" href="/src/css/style.css" />
 
-    <!-- Schema.org JSON-LD Structured Data -->
-    <script type="application/ld+json">
+    <!-- Schema.org JSON-LD Structured Data (Initial Payload) -->
+    <script id="dynamic-schema-jsonld" type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Muhammad Coovadia Psychometrist",
-      "slogan": "Clarity Starts Here",
-      "description": "HPCSA Registered Psychometrist (PMT 007523 / PR 0071253) offering in-person, paper-based psychometric assessments in Norwood, Johannesburg for Grade 9 subject choices and tertiary career guidance.",
-      "telephone": "+27632377926",
-      "email": "muhammadcoovadia88@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "84 Frances Rd",
-        "addressLocality": "Norwood",
-        "addressRegion": "Johannesburg",
-        "postalCode": "2192",
-        "addressCountry": "ZA"
-      },
-      "employee": {
-        "@type": "Person",
-        "name": "Muhammad Coovadia",
-        "jobTitle": "Registered Psychometrist",
-        "hasCredential": [
-          "BA (UJ)",
-          "BA HONS PSYCH (UJ)",
-          "PSYCHOMETRY (UJ)",
-          "HPCSA PMT 007523",
-          "Practice PR 0071253"
-        ]
-      },
-      "priceRange": "Private practice rates (Itemised invoice for medical aid claimback)",
-      "openingHours": "Mo-Fr 08:30-17:00, Sa 09:00-13:00"
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://muhammad-coovadia-psychometrist.vercel.app/#practice",
+          "name": "Muhammad Coovadia Psychometrist",
+          "legalName": "Muhammad Coovadia",
+          "slogan": "Clarity Starts Here",
+          "description": "HPCSA Registered Psychometrist (PMT 007523 / PR 0071253) offering in-person, paper-based psychometric assessments in Norwood, Johannesburg for Grade 9 subject choices and tertiary career guidance.",
+          "telephone": "+27632377926",
+          "email": "muhammadcoovadia88@gmail.com",
+          "url": "https://muhammad-coovadia-psychometrist.vercel.app/",
+          "image": "https://muhammad-coovadia-psychometrist.vercel.app/portrait.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "84 Frances Rd",
+            "addressLocality": "Norwood",
+            "addressRegion": "Johannesburg",
+            "postalCode": "2192",
+            "addressCountry": "ZA"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -26.1554,
+            "longitude": 28.0772
+          },
+          "employee": {
+            "@type": "Person",
+            "@id": "https://muhammad-coovadia-psychometrist.vercel.app/#practitioner",
+            "name": "Muhammad Coovadia",
+            "jobTitle": "Registered Psychometrist",
+            "url": "https://muhammad-coovadia-psychometrist.vercel.app/about",
+            "hasCredential": [
+              { "@type": "EducationalOccupationalCredential", "name": "BA (UJ)" },
+              { "@type": "EducationalOccupationalCredential", "name": "BA HONS PSYCH (UJ)" },
+              { "@type": "EducationalOccupationalCredential", "name": "PSYCHOMETRY (UJ)" },
+              { "@type": "EducationalOccupationalCredential", "name": "HPCSA PMT 007523" },
+              { "@type": "EducationalOccupationalCredential", "name": "Practice PR 0071253" }
+            ]
+          },
+          "priceRange": "Private practice rates (Itemised invoice for medical aid claimback)",
+          "openingHours": "Mo-Fr 08:30-17:00, Sa 09:00-13:00"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://muhammad-coovadia-psychometrist.vercel.app/#website",
+          "url": "https://muhammad-coovadia-psychometrist.vercel.app/",
+          "name": "Muhammad Coovadia Psychometrist",
+          "publisher": { "@id": "https://muhammad-coovadia-psychometrist.vercel.app/#practice" },
+          "inLanguage": "en-ZA"
+        }
+      ]
     }
     </script>
   </head>
   <body class="bg-[#ededed] text-[#2b2b2b] antialiased">
-    <!-- App Root for React Router & Dynamic Client Experience -->
-    <div id="root"></div>
+    <!-- App Root: Pre-rendered crawlable HTML structure hydrated on React boot -->
+    <div id="root">
+      <header class="bg-[#ededed] border-b border-[#2b2b2b]/15 p-4">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+          <a href="/" class="flex items-center gap-3 text-stone-900 font-bold text-lg">
+            <img src="/logo-transparent.png" alt="Muhammad Coovadia Psychometrist Logo" width="64" height="64" />
+            <span>Muhammad Coovadia Psychometrist</span>
+          </a>
+          <nav aria-label="Practice Navigation">
+            <ul class="flex gap-4 text-xs font-semibold uppercase">
+              <li><a href="/" class="text-[#0c5253] hover:underline">Practice Overview</a></li>
+              <li><a href="/about" class="text-[#2b2b2b] hover:underline">About Practitioner</a></li>
+              <li><a href="/assessments" class="text-[#2b2b2b] hover:underline">Assessment Batteries</a></li>
+              <li><a href="/contact" class="text-[#2b2b2b] hover:underline">Intake & Scheduling</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main id="main-content" class="max-w-6xl mx-auto px-4 py-12">
+        <section class="mb-12">
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-[#2b2b2b] mb-4">
+            Clarity Starts Here: In-Person Psychometric Assessments in Norwood, Johannesburg
+          </h1>
+          <p class="text-stone-700 text-base leading-relaxed mb-6">
+            Objective, standardized paper-based psychometric evaluations to guide high school FET subject choices and tertiary career pathways. Administered in-person by registered psychometrist Muhammad Coovadia (HPCSA PMT 007523 / Practice PR 0071253) in Norwood, Johannesburg.
+          </p>
+          <div class="flex gap-4">
+            <a href="/contact" class="bg-[#0c5253] text-white px-5 py-2.5 rounded text-xs font-bold uppercase">Schedule Assessment Session</a>
+            <a href="/assessments" class="border border-[#2b2b2b] text-[#2b2b2b] px-5 py-2.5 rounded text-xs font-bold uppercase">Review Assessment Batteries</a>
+          </div>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-2xl font-bold text-[#2b2b2b] mb-6">Specialized Indicative Assessment Batteries</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <article class="p-6 bg-white border border-stone-300 rounded">
+              <h3 class="text-xl font-bold text-[#2b2b2b] mb-2">Grade 9 Subject Choice Assessment</h3>
+              <p class="text-xs text-stone-600 mb-4">
+                Norm-referenced cognitive aptitude, reasoning, and vocational interest battery designed to empower Grade 9 learners and parents to select optimal FET phase subject streams for matric and university entry.
+              </p>
+              <a href="/assessments/grade-9-subject-choice" class="text-xs font-bold text-[#0c5253] hover:underline">View Assessment Details &rarr;</a>
+            </article>
+
+            <article class="p-6 bg-white border border-stone-300 rounded">
+              <h3 class="text-xl font-bold text-[#2b2b2b] mb-2">Tertiary / University Field Selection & Career Guidance</h3>
+              <p class="text-xs text-stone-600 mb-4">
+                Comprehensive evaluation for matriculants, university applicants, and young adults aligning cognitive strengths with South African tertiary degree programs (APS scores) and long-term career viability.
+              </p>
+              <a href="/assessments/tertiary-field-career-guidance" class="text-xs font-bold text-[#0c5253] hover:underline">View Assessment Details &rarr;</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="p-6 bg-white border border-stone-300 rounded mb-12">
+          <h2 class="text-xl font-bold text-[#2b2b2b] mb-3">Practice Location & HPCSA Registration</h2>
+          <p class="text-xs text-stone-600 mb-2"><strong>Practitioner:</strong> Muhammad Coovadia (BA, BA Hons Psych, Psychometry UJ)</p>
+          <p class="text-xs text-stone-600 mb-2"><strong>Statutory Registration:</strong> HPCSA PMT 007523 | Practice PR 0071253</p>
+          <p class="text-xs text-stone-600 mb-2"><strong>Testing Room Address:</strong> 84 Frances Rd, Norwood, Johannesburg, 2192</p>
+          <p class="text-xs text-stone-600 mb-2"><strong>Telephone:</strong> 063 237 7926 / +27 63 237 7926</p>
+          <p class="text-xs text-stone-600 mb-4"><strong>Email:</strong> muhammadcoovadia88@gmail.com</p>
+          <p class="text-xs text-stone-500">Private billing practice with full itemised tax invoices for medical aid claimback submission.</p>
+        </section>
+      </main>
+
+      <footer class="bg-[#2b2b2b] text-white p-8">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-stone-400">
+          <p>© 2026 Muhammad Coovadia Psychometrist. All rights reserved.</p>
+          <nav aria-label="Footer Navigation">
+            <ul class="flex gap-4">
+              <li><a href="/" class="hover:text-white">Home</a></li>
+              <li><a href="/about" class="hover:text-white">About</a></li>
+              <li><a href="/assessments" class="hover:text-white">Assessments</a></li>
+              <li><a href="/contact" class="hover:text-white">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
 
     <script type="module" src="/src/main.tsx"></script>
   </body>

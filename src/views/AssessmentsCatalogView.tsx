@@ -140,7 +140,7 @@ export const AssessmentsCatalogView: React.FC = () => {
               {/* Evaluated Dimensions Grid */}
               <div className="space-y-3 pt-2">
                 <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-[#0c5253]">
-                  Diagnostic Evaluation Dimensions
+                  Indicative Evaluation Dimensions
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {assessment.evaluatedDimensions.map((dim, idx) => (
@@ -197,11 +197,11 @@ export const AssessmentsCatalogView: React.FC = () => {
                   id={`view-full-spec-btn-${assessment.id}`}
                   className="btn-tactile-charcoal text-xs tap-target"
                 >
-                  <span>View Diagnostic Breakdown</span>
+                  <span>View Indicative Breakdown</span>
                 </Link>
 
                 <Link
-                  to="/contact"
+                  to={`/contact?service=${assessment.id}`}
                   id={`book-assessment-btn-${assessment.id}`}
                   className="btn-tactile-teal text-xs tap-target"
                 >

@@ -13,7 +13,15 @@ export const Footer: React.FC = () => {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 relative z-10">
           <div className="flex items-center gap-4">
             <div className="w-14 h-14 sm:w-16 sm:h-16 flex-shrink-0 flex items-center justify-center">
-              <img src={practiceLogo} alt="Logo" className="w-full h-full object-contain drop-shadow-sm" />
+              <img 
+                src={practiceLogo} 
+                alt="Muhammad Coovadia Registered Psychometrist Logo" 
+                width={64} 
+                height={64} 
+                loading="lazy" 
+                decoding="async" 
+                className="w-full h-full object-contain drop-shadow-sm" 
+              />
             </div>
             <div>
               <p className="font-bold tracking-tight text-white text-base sm:text-lg">
@@ -55,7 +63,15 @@ export const Footer: React.FC = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-3.5">
               <div className="w-14 h-14 sm:w-16 sm:h-16 flex-shrink-0 flex items-center justify-center">
-                <img src={practiceLogo} alt="Logo" className="w-full h-full object-contain drop-shadow-sm" />
+                <img 
+                  src={practiceLogo} 
+                  alt="Muhammad Coovadia Registered Psychometrist Logo" 
+                  width={64} 
+                  height={64} 
+                  loading="lazy" 
+                  decoding="async" 
+                  className="w-full h-full object-contain drop-shadow-sm" 
+                />
               </div>
               <div>
                 <h3 className="font-bold text-base text-white">{PRACTICE_INFO.practitioner}</h3>

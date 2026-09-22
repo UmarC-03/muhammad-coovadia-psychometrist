@@ -107,7 +107,7 @@ export const ContactBookingView: React.FC = () => {
                   Candidate Assessment Inquiry
                 </h2>
                 <p className="text-xs text-stone-600 mt-1">
-                  Complete this diagnostic inquiry form or use direct WhatsApp messaging.
+                  Complete this assessment inquiry form or use direct WhatsApp messaging.
                 </p>
               </div>
 

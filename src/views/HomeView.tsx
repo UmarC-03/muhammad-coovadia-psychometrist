@@ -40,6 +40,9 @@ export const HomeView: React.FC = () => {
               <div className="space-y-3">
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
                   Clarity Starts Here.
+                  <span className="block text-lg sm:text-xl lg:text-2xl font-semibold text-teal-300 mt-2">
+                    In-Person Psychometric Assessments in Norwood, Johannesburg
+                  </span>
                 </h1>
                 <p className="text-base sm:text-lg text-stone-200 font-normal max-w-xl leading-relaxed">
                   Objective, paper-based psychometric evaluations to guide high school FET subject choices and tertiary career pathways. Conducted in-person at our Norwood practice.
@@ -99,7 +102,11 @@ export const HomeView: React.FC = () => {
                     <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-lg overflow-hidden border-2 border-[#0c5253] shadow-md bg-stone-900">
                       <img 
                         src={portraitImg} 
-                        alt="Muhammad Coovadia - Registered Psychometrist" 
+                        alt="Muhammad Coovadia - Registered Psychometrist in Norwood, Johannesburg" 
+                        width={176}
+                        height={176}
+                        loading="eager"
+                        decoding="async"
                         className="w-full h-full object-cover object-center"
                       />
                     </div>
@@ -148,7 +155,7 @@ export const HomeView: React.FC = () => {
               Specialized Practice Focus
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#2b2b2b]">
-              Diagnostic Assessment Batteries
+              Indicative Assessment Batteries
             </h2>
             <p className="text-sm sm:text-base text-stone-600 leading-relaxed">
               Standardized, norm-referenced evaluations tailored for Grade 9 subject selection and post-school career direction.
@@ -215,7 +222,7 @@ export const HomeView: React.FC = () => {
                 </Link>
 
                 <Link
-                  to="/contact"
+                  to="/contact?service=grade-9-subject-choice"
                   id="home-grade-9-book-btn"
                   className="text-xs font-bold text-[#0c5253] hover:underline flex items-center gap-1.5"
                 >
@@ -281,7 +288,7 @@ export const HomeView: React.FC = () => {
                 </Link>
 
                 <Link
-                  to="/contact"
+                  to="/contact?service=tertiary-field-career-guidance"
                   id="home-tertiary-book-btn"
                   className="text-xs font-bold text-[#2b2b2b] hover:underline flex items-center gap-1.5"
                 >
@@ -309,7 +316,7 @@ export const HomeView: React.FC = () => {
                 The Clinical Integrity of Paper-Based Testing
               </h2>
               <p className="text-xs sm:text-sm text-stone-300 leading-relaxed">
-                In an era dominated by automated online surveys, standardized paper-based batteries administered by a registered psychometrist provide essential diagnostic reliability.
+                In an era dominated by automated online surveys, standardized paper-based batteries administered by a registered psychometrist provide essential indicative reliability.
               </p>
             </div>
 
@@ -368,7 +375,7 @@ export const HomeView: React.FC = () => {
           <div className="max-w-3xl mb-12 space-y-2">
             <div className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-[#0c5253]">
               <span className="w-2 h-2 bg-[#0c5253] transform rotate-45 inline-block"></span>
-              Step-by-Step Diagnostic Sequence
+              Step-by-Step Assessment Sequence
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#2b2b2b]">
               The Client Assessment Journey
@@ -428,7 +435,7 @@ export const HomeView: React.FC = () => {
                 Practice Billing & Medical Aid Policy
               </h2>
               <p className="text-xs sm:text-sm text-stone-700 leading-relaxed">
-                Muhammad Coovadia Psychometrist operates as a private billing practice. Clients receive a comprehensive, itemised tax invoice following the completion of the feedback consultation. This invoice contains all relevant diagnostic and practice codes (HPCSA PMT 007523 / Practice PR 0071253) to submit directly to your medical aid scheme for reimbursement.
+                Muhammad Coovadia Psychometrist operates as a private billing practice. Clients receive a comprehensive, itemised tax invoice following the completion of the feedback consultation. This invoice contains all relevant tariff and practice codes (HPCSA PMT 007523 / Practice PR 0071253) to submit directly to your medical aid scheme for reimbursement.
               </p>
               <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-stone-600 pt-2">
                 <span className="inline-flex items-center gap-1.5">

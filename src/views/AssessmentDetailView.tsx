@@ -100,7 +100,7 @@ export const AssessmentDetailView: React.FC = () => {
             {/* Detailed Clinical Overview */}
             <div className="card-tactile panel-curved p-6 sm:p-8 bg-white border border-[#2b2b2b]/15 space-y-4">
               <h2 className="text-xl font-bold text-[#2b2b2b] tracking-tight">
-                Assessment Overview & Diagnostic Objective
+                Assessment Overview & Indicative Objective
               </h2>
               <p className="text-xs sm:text-sm text-stone-700 leading-relaxed">
                 {assessment.detailedOverview}
@@ -176,7 +176,7 @@ export const AssessmentDetailView: React.FC = () => {
 
               <div className="pt-3 border-t border-stone-700 space-y-2.5">
                 <Link
-                  to="/contact"
+                  to={`/contact?service=${assessment.id}`}
                   id="detail-schedule-primary-btn"
                   className="w-full py-3 bg-[#0c5253] hover:bg-[#126d6f] text-white font-bold text-xs uppercase tracking-wider text-center panel-curved tap-target flex items-center justify-center gap-2 transition-colors"
                 >

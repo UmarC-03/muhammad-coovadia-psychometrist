@@ -1,0 +1,12 @@
+# robots.txt for Muhammad Coovadia Psychometrist
+# Practice: 84 Frances Rd, Norwood, Johannesburg, South Africa
+# HPCSA: PMT 007523 / Practice PR 0071253
+
+User-agent: *
+Allow: /
+
+# Disallow internal assets or private directories
+Disallow: /api/
+
+# XML Sitemap Location
+Sitemap: https://muhammad-coovadia-psychometrist.vercel.app/sitemap.xml

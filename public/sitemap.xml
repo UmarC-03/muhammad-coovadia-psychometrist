@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://muhammad-coovadia-psychometrist.vercel.app/</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- About Muhammad Coovadia -->
+  <url>
+    <loc>https://muhammad-coovadia-psychometrist.vercel.app/about</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Assessment Batteries Catalog -->
+  <url>
+    <loc>https://muhammad-coovadia-psychometrist.vercel.app/assessments</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Grade 9 Subject Choice Battery Detail -->
+  <url>
+    <loc>https://muhammad-coovadia-psychometrist.vercel.app/assessments/grade-9-subject-choice</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Tertiary & Career Guidance Battery Detail -->
+  <url>
+    <loc>https://muhammad-coovadia-psychometrist.vercel.app/assessments/tertiary-field-career-guidance</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Intake & Scheduling -->
+  <url>
+    <loc>https://muhammad-coovadia-psychometrist.vercel.app/contact</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

@@ -46,7 +46,7 @@ export const ASSESSMENTS: Assessment[] = [
       },
       {
         title: "Academic & Vocational Interests",
-        description: "Diagnostic profiling of occupational preferences, scientific vs. commercial inclinations, and creative orientations.",
+        description: "Indicative profiling of occupational preferences, scientific vs. commercial inclinations, and creative orientations.",
       },
       {
         title: "Reasoning & Problem-Solving Profiles",

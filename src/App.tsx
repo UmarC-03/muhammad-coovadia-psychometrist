@@ -13,6 +13,7 @@ import { AssessmentsCatalogView } from './views/AssessmentsCatalogView';
 import { AssessmentDetailView } from './views/AssessmentDetailView';
 import { ContactBookingView } from './views/ContactBookingView';
 import { NotFoundView } from './views/NotFoundView';
+import { SEOHead } from './components/SEOHead';
 import { MessageSquare, Phone } from 'lucide-react';
 import { PRACTICE_INFO } from './data/practiceData';
 
@@ -21,6 +22,9 @@ const MainRouter: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#ededed] text-[#2b2b2b]">
+      {/* Dynamic Framework-Native SEO Head & Schema.org Management */}
+      <SEOHead />
+
       {/* Accessibility Skip Link */}
       <a
         href="#main-content"

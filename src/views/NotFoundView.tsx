@@ -13,7 +13,7 @@ export const NotFoundView: React.FC = () => {
         <div className="space-y-2">
           <h1 className="text-2xl font-bold text-[#2b2b2b]">Page Not Found</h1>
           <p className="text-sm text-stone-600">
-            The page you requested does not exist or has been relocated.
+            The requested page was not found or has been relocated to another address.
           </p>
         </div>
 

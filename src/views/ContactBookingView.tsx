@@ -79,7 +79,7 @@ export const ContactBookingView: React.FC = () => {
             </h1>
 
             <p className="text-stone-300 text-xs sm:text-sm leading-relaxed max-w-2xl">
-              Inquire regarding candidate testing appointments at 84 Frances Rd, Norwood. Paper batteries are scheduled individually to guarantee a quiet, standardized environment.
+              Direct intake & assessment scheduling for in-person evaluations at 84 Frances Rd, Norwood, Johannesburg. Candidate intake and assessment appointments are scheduled individually to guarantee a quiet, standardized testing room.
             </p>
 
             <div className="flex flex-wrap items-center gap-3 pt-2 text-xs font-mono text-stone-300">
@@ -350,7 +350,7 @@ export const ContactBookingView: React.FC = () => {
                 Medical Aid Reimbursement Notice
               </h4>
               <p className="text-stone-700 leading-relaxed text-xs">
-                Private practice fees apply for all assessment batteries. Upon completion of the feedback consultation, an itemised invoice reflecting HPCSA practice registration numbers (PMT 007523 / PR 0071253) is provided for medical aid reimbursement.
+                Private practice fees apply for all assessment batteries. Upon completion of the feedback consultation, an itemised invoice reflecting HPCSA practice registration numbers (PMT {PRACTICE_INFO.hpcsaPMT} / PR {PRACTICE_INFO.practicePR}) is provided for medical aid reimbursement.
               </p>
               <div className="flex items-center gap-2 text-teal-800 font-semibold text-[11px] pt-1">
                 <CheckSquare className="w-3.5 h-3.5 shrink-0" />

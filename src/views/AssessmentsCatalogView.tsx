@@ -37,7 +37,7 @@ export const AssessmentsCatalogView: React.FC = () => {
             </h1>
 
             <p className="text-stone-300 text-xs sm:text-sm leading-relaxed max-w-2xl">
-              Standardized, in-person paper batteries administered at 84 Frances Rd, Norwood, Johannesburg. Evaluates cognitive strengths, reasoning styles, and vocational affinities using normed psychometric instruments.
+              Explore our standardized psychometric assessment batteries administered in-person at 84 Frances Rd, Norwood, Johannesburg. Each psychometric assessment battery evaluates cognitive strengths, reasoning styles, and vocational affinities using normed paper instruments.
             </p>
 
             <div className="flex flex-wrap items-center gap-2.5 pt-2 text-xs font-mono text-stone-300">

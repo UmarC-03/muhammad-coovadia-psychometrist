@@ -4,7 +4,7 @@ export const PRACTICE_INFO: PracticeInfo = {
   practitioner: "Muhammad Coovadia",
   qualifications: "BA (UJ); BA HONS PSYCH (UJ); PSYCHOMETRY (UJ)",
   designation: "Registered Psychometrist",
-  hpcsaPMT: "007523",
+  hpcsaPMT: "0104167",
   practicePR: "0071253",
   address: {
     street: "84 Frances Rd",
@@ -32,13 +32,13 @@ export const ASSESSMENTS: Assessment[] = [
     id: "grade-9-subject-choice",
     title: "Grade 9 Subject Choice Assessment",
     shortTitle: "Grade 9 Subject Choice",
-    subtitle: "Informed FET phase subject stream selection for high school success",
+    subtitle: "Standardized Grade 9 Subject Choice Assessment guiding FET phase stream selection for high school and matric success",
     targetAudience: "Grade 9 learners preparing for FET phase subject selection.",
     formatAndDuration: "Paper-based, in-person assessment at the Norwood practice. Session duration varies.",
     whatItMeasures: "Aptitude, interest, and reasoning profiles to ensure informed FET subject stream decisions.",
     deliverables: "Comprehensive written assessment report + 1-on-1 feedback consultation session.",
     detailedOverview:
-      "The transition into the Further Education and Training (FET) phase (Grades 10–12) requires learners to choose specific subjects that shape their future matric pass and university admission point scores (APS). This assessment battery evaluates cognitive aptitudes, intrinsic academic interests, and problem-solving reasoning to ensure subject selections align with the learner's genuine strengths and long-term potential.",
+      "The Grade 9 Subject Choice Assessment is an in-person, standardized evaluation for learners transitioning into the Further Education and Training (FET) phase (Grades 10–12). Choosing specific subjects shapes future matric pass rates and university admission point scores (APS). This Grade 9 subject choice assessment battery evaluates cognitive aptitudes, intrinsic academic interests, and problem-solving reasoning to ensure subject selections align with genuine strengths and long-term potential.",
     evaluatedDimensions: [
       {
         title: "Cognitive Aptitude & Intellectual Strengths",
@@ -66,13 +66,13 @@ export const ASSESSMENTS: Assessment[] = [
     id: "tertiary-field-career-guidance",
     title: "Tertiary / University Field Selection & Career Guidance",
     shortTitle: "Tertiary & Career Guidance",
-    subtitle: "Strategic post-school qualification direction and career pathway alignment",
+    subtitle: "Tertiary and university field selection assessment with structured career guidance for post-school academic pathways",
     targetAudience: "Young adults, matriculants, and students seeking post-school qualification direction and career pathway alignment.",
     formatAndDuration: "Paper-based, in-person assessment at the Norwood practice. Session duration varies based on testing battery.",
     whatItMeasures: "Vocational interests, cognitive strengths, and career suitability profiles.",
     deliverables: "Comprehensive written assessment report + 1-on-1 feedback consultation session.",
     detailedOverview:
-      "Navigating university degree choices, diploma options, and vocational routes requires a rigorous understanding of one's core cognitive profile and vocational affinity. This assessment provides structured, objective guidance to help matriculants and tertiary candidates choose university faculties, degrees, and career pathways with confidence.",
+      "Navigating university degree choices, diploma options, and vocational routes requires a rigorous understanding of one's core cognitive profile and vocational affinity. Our Tertiary / University Field Selection & Career Guidance assessment provides structured, objective psychometric evaluations to help matriculants and tertiary candidates choose university faculties, degree fields, and career pathways with clarity and confidence.",
     evaluatedDimensions: [
       {
         title: "Vocational & Career Affinity",

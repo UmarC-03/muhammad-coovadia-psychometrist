@@ -66,7 +66,7 @@ export const AboutView: React.FC = () => {
                   {PRACTICE_INFO.qualifications}
                 </p>
                 <p className="text-stone-300 leading-relaxed">
-                  Conferred by the University of Johannesburg (UJ). Practicing under full registration with the Health Professions Council of South Africa (HPCSA).
+                  Conferred by the University of Johannesburg (UJ). Muhammad Coovadia is an HPCSA registered psychometrist operating a dedicated private practice in Norwood, Johannesburg, adhering to rigorous statutory ethical standards.
                 </p>
               </div>
             </div>

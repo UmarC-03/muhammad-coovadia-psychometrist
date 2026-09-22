@@ -196,7 +196,7 @@ export const Footer: React.FC = () => {
         <div className="mt-12 pt-6 border-t border-stone-800 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-stone-400">
           <p>© {new Date().getFullYear()} {PRACTICE_INFO.practitioner}. All rights reserved.</p>
           <div className="flex items-center gap-4 text-[11px] font-mono">
-            <span>HPCSA PMT 007523</span>
+            <span>HPCSA PMT {PRACTICE_INFO.hpcsaPMT}</span>
             <span>•</span>
             <span>PR 0071253</span>
             <span>•</span>

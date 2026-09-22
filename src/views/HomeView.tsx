@@ -45,7 +45,7 @@ export const HomeView: React.FC = () => {
                   </span>
                 </h1>
                 <p className="text-base sm:text-lg text-stone-200 font-normal max-w-xl leading-relaxed">
-                  Objective, paper-based psychometric evaluations to guide high school FET subject choices and tertiary career pathways. Conducted in-person at our Norwood practice.
+                  Clarity starts here through objective, standardized in-person psychometric assessments in Norwood, Johannesburg. We guide high school FET subject choices and tertiary career pathways through normative, paper-based evaluation batteries.
                 </p>
               </div>
 
@@ -122,7 +122,7 @@ export const HomeView: React.FC = () => {
                         <p className="text-xs text-teal-300 font-mono">{PRACTICE_INFO.designation}</p>
                       </div>
                       <span className="text-[11px] font-mono text-[#ffffff] shrink-0">
-                        PR {PRACTICE_INFO.practicePR} PMT 0104167
+                        PR {PRACTICE_INFO.practicePR} • PMT {PRACTICE_INFO.hpcsaPMT}
                       </span>
                     </div>
 
@@ -435,7 +435,7 @@ export const HomeView: React.FC = () => {
                 Practice Billing & Medical Aid Policy
               </h2>
               <p className="text-xs sm:text-sm text-stone-700 leading-relaxed">
-                Muhammad Coovadia Psychometrist operates as a private billing practice. Clients receive a comprehensive, itemised tax invoice following the completion of the feedback consultation. This invoice contains all relevant tariff and practice codes (HPCSA PMT 007523 / Practice PR 0071253) to submit directly to your medical aid scheme for reimbursement.
+                Muhammad Coovadia Psychometrist operates as a private billing practice. Clients receive a comprehensive, itemised tax invoice following the completion of the feedback consultation. This invoice contains all relevant tariff and practice codes (HPCSA PMT {PRACTICE_INFO.hpcsaPMT} / Practice PR {PRACTICE_INFO.practicePR}) to submit directly to your medical aid scheme for reimbursement.
               </p>
               <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-stone-600 pt-2">
                 <span className="inline-flex items-center gap-1.5">

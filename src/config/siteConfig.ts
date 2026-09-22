@@ -12,11 +12,11 @@ export const SITE_CONFIG = {
   name: 'Muhammad Coovadia Psychometrist',
   legalName: 'Muhammad Coovadia',
   designation: 'Registered Psychometrist',
-  hpcsaPMT: '007523',
+  hpcsaPMT: '0104167',
   practicePR: '0071253',
   slogan: 'Clarity Starts Here',
   defaultTitle: 'Muhammad Coovadia Psychometrist | Norwood, Johannesburg',
-  defaultDescription: 'HPCSA Registered Psychometrist (PMT 007523 / PR 0071253) in Norwood, Johannesburg. In-person, paper-based psychometric evaluations for Grade 9 FET subject choices and tertiary career guidance.',
+  defaultDescription: 'HPCSA Registered Psychometrist (PMT 0104167 / PR 0071253) in Norwood, Johannesburg. In-person, paper-based psychometric evaluations for Grade 9 FET subject choices and tertiary career guidance.',
   phone: '063 237 7926',
   phoneRaw: '0632377926',
   phoneIntl: '+27632377926',
@@ -78,7 +78,7 @@ export interface RouteMetadata {
 export const ROUTE_METADATA: Record<string, RouteMetadata> = {
   home: {
     title: 'Muhammad Coovadia Psychometrist | Norwood, Johannesburg',
-    description: 'HPCSA Registered Psychometrist (PMT 007523 / PR 0071253) in Norwood, Johannesburg. In-person, paper-based psychometric evaluations for Grade 9 FET subject choices and tertiary career guidance.',
+    description: 'HPCSA Registered Psychometrist (PMT 0104167 / PR 0071253) in Norwood, Johannesburg. In-person, paper-based psychometric evaluations for Grade 9 FET subject choices and tertiary career guidance.',
     canonicalPath: '/',
     ogType: 'website',
     ogImage: '/portrait.jpg',
@@ -89,7 +89,7 @@ export const ROUTE_METADATA: Record<string, RouteMetadata> = {
   },
   about: {
     title: 'About Muhammad Coovadia – Registered Psychometrist | Norwood, Johannesburg',
-    description: 'Learn about Muhammad Coovadia, HPCSA Registered Psychometrist (PMT 007523 / PR 0071253) based in Norwood, Johannesburg. Qualifications, statutory scope, and evaluation philosophy.',
+    description: 'Learn about Muhammad Coovadia, HPCSA Registered Psychometrist (PMT 0104167 / PR 0071253) based in Norwood, Johannesburg. Qualifications, statutory scope, and evaluation philosophy.',
     canonicalPath: '/about',
     ogType: 'profile',
     ogImage: '/portrait.jpg',

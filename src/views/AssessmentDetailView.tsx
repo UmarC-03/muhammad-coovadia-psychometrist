@@ -1,4 +1,5 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import { useNavigation, Link } from '../context/NavigationContext';
 import { ASSESSMENTS, PRACTICE_INFO } from '../data/practiceData';
 import { 
@@ -13,8 +14,10 @@ import {
 
 export const AssessmentDetailView: React.FC = () => {
   const { assessmentId } = useNavigation();
+  const { id } = useParams<{ id: string }>();
+  const activeId = id || assessmentId;
 
-  const assessment = ASSESSMENTS.find((item) => item.id === assessmentId);
+  const assessment = ASSESSMENTS.find((item) => item.id === activeId);
 
   if (!assessment) {
     return (

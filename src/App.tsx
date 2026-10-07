@@ -3,8 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React from 'react';
-import { NavigationProvider, useNavigation } from './context/NavigationContext';
+import React, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { NavigationProvider } from './context/NavigationContext';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { HomeView } from './views/HomeView';
@@ -17,13 +18,22 @@ import { SEOHead } from './components/SEOHead';
 import { MessageSquare, Phone } from 'lucide-react';
 import { PRACTICE_INFO } from './data/practiceData';
 
-const MainRouter: React.FC = () => {
-  const { currentRoute } = useNavigation();
+const ScrollToTop: React.FC = () => {
+  const { pathname } = useLocation();
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [pathname]);
+
+  return null;
+};
+
+const MainRouter: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col bg-[#ededed] text-[#2b2b2b]">
       {/* Dynamic Framework-Native SEO Head & Schema.org Management */}
       <SEOHead />
+      <ScrollToTop />
 
       {/* Accessibility Skip Link */}
       <a
@@ -38,12 +48,14 @@ const MainRouter: React.FC = () => {
 
       {/* Main Content Area */}
       <main id="main-content" className="grow">
-        {currentRoute === 'home' && <HomeView />}
-        {currentRoute === 'about' && <AboutView />}
-        {currentRoute === 'assessments' && <AssessmentsCatalogView />}
-        {currentRoute === 'assessment-detail' && <AssessmentDetailView />}
-        {currentRoute === 'contact' && <ContactBookingView />}
-        {currentRoute === 'not-found' && <NotFoundView />}
+        <Routes>
+          <Route path="/" element={<HomeView />} />
+          <Route path="/about" element={<AboutView />} />
+          <Route path="/assessments" element={<AssessmentsCatalogView />} />
+          <Route path="/assessments/:id" element={<AssessmentDetailView />} />
+          <Route path="/contact" element={<ContactBookingView />} />
+          <Route path="*" element={<NotFoundView />} />
+        </Routes>
       </main>
 
       {/* Mobile Floating Quick Contact Bar (Mobile-Only for fast touch access) */}
@@ -76,8 +88,10 @@ const MainRouter: React.FC = () => {
 
 export default function App() {
   return (
-    <NavigationProvider>
-      <MainRouter />
-    </NavigationProvider>
+    <BrowserRouter>
+      <NavigationProvider>
+        <MainRouter />
+      </NavigationProvider>
+    </BrowserRouter>
   );
 }

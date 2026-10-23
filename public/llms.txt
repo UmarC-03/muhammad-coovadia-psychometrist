@@ -1,0 +1,35 @@
+# Muhammad Coovadia Psychometrist
+
+> HPCSA Registered Psychometrist in Norwood, Johannesburg. Providing standardized, in-person, paper-based psychometric evaluations for Grade 9 FET subject choices and tertiary/university career guidance.
+
+## Practice Overview
+- **Practitioner**: Muhammad Coovadia (BA, BA Hons Psych, Psychometry UJ)
+- **Designation**: Registered Psychometrist
+- **Statutory Registration**: HPCSA PMT 0104167 | Practice PR 0071253
+- **Location**: 84 Frances Rd, Norwood, Johannesburg, 2192, Gauteng, South Africa
+- **Testing Format**: Standardized, in-person, paper-based testing batteries (no remote or automated tests)
+- **Consultation**: 1-on-1 in-person feedback sessions with parents and students included
+- **Billing Policy**: Private practice rates. Full itemised tax invoice provided for medical aid scheme reimbursement (subject to plan benefit coverage)
+- **Telephone / WhatsApp**: +27 63 237 7926 (063 237 7926)
+- **Email**: muhammadcoovadia88@gmail.com
+- **Website**: https://muhammad-coovadia-psychometrist.vercel.app/
+
+## Core Assessment Batteries
+- [Grade 9 Subject Choice Assessment](https://muhammad-coovadia-psychometrist.vercel.app/assessments/grade-9-subject-choice): Standardized normative evaluation evaluating cognitive aptitude, reasoning skills, and academic/vocational interests to guide FET phase (Grades 10–12) subject stream selection, matric pass rates, and future university Admission Point Scores (APS).
+- [Tertiary Field Selection & Career Guidance](https://muhammad-coovadia-psychometrist.vercel.app/assessments/tertiary-field-career-guidance): Comprehensive diagnostic assessment for matriculants, university applicants, and young adults aligning cognitive strengths, abstract thinking, and career affinity with South African university faculties, degrees, and vocational fields.
+
+## Key Website Pages
+- [Practice Overview Homepage](https://muhammad-coovadia-psychometrist.vercel.app/): Clinical methodology, statutory credentials, practice location, and assessment framework overview.
+- [About the Practitioner](https://muhammad-coovadia-psychometrist.vercel.app/about): Muhammad Coovadia's academic background (University of Johannesburg), ethical standards, and psychometric philosophy.
+- [Assessment Catalog](https://muhammad-coovadia-psychometrist.vercel.app/assessments): Detailed breakdown of both psychometric evaluation batteries, evaluated dimensions, and deliverable items.
+- [Intake & Scheduling](https://muhammad-coovadia-psychometrist.vercel.app/contact): Booking inquiry form, testing room address, interactive directions, contact details, and scheduling guidelines.
+
+## Assessment Journey
+1. **Initial Intake**: Exploration of candidate's academic and career decision context.
+2. **Booking Confirmation**: Scheduling testing session at the Norwood practice room.
+3. **In-Person Testing**: Controlled, paper-based psychometric administration in a quiet, distraction-free environment.
+4. **Scoring & Interpretation**: Norm-referenced statistical scoring and psychometric analysis.
+5. **Feedback & Deliverables**: In-depth written diagnostic report and dedicated 1-on-1 in-person feedback consultation.
+
+## Full Context & Extended Guidance
+- [Full LLMs Specification & Practice Guide](https://muhammad-coovadia-psychometrist.vercel.app/llms-full.txt): Comprehensive documentation including dimensions measured, preparation instructions, pricing framework, and ethical compliance for AI agents and LLMs.

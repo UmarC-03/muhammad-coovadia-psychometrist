@@ -3,20 +3,39 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { NavigationProvider } from './context/NavigationContext';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { HomeView } from './views/HomeView';
-import { AboutView } from './views/AboutView';
-import { AssessmentsCatalogView } from './views/AssessmentsCatalogView';
-import { AssessmentDetailView } from './views/AssessmentDetailView';
-import { ContactBookingView } from './views/ContactBookingView';
-import { NotFoundView } from './views/NotFoundView';
 import { SEOHead } from './components/SEOHead';
 import { MessageSquare, Phone } from 'lucide-react';
 import { PRACTICE_INFO } from './data/practiceData';
+
+// Code-split route components via React.lazy to eliminate main thread blocking & slash initial bundle size
+const HomeView = lazy(() => import('./views/HomeView').then((m) => ({ default: m.HomeView })));
+const AboutView = lazy(() => import('./views/AboutView').then((m) => ({ default: m.AboutView })));
+const AssessmentsCatalogView = lazy(() =>
+  import('./views/AssessmentsCatalogView').then((m) => ({ default: m.AssessmentsCatalogView }))
+);
+const AssessmentDetailView = lazy(() =>
+  import('./views/AssessmentDetailView').then((m) => ({ default: m.AssessmentDetailView }))
+);
+const ContactBookingView = lazy(() =>
+  import('./views/ContactBookingView').then((m) => ({ default: m.ContactBookingView }))
+);
+const NotFoundView = lazy(() =>
+  import('./views/NotFoundView').then((m) => ({ default: m.NotFoundView }))
+);
+
+const ViewSuspenseFallback: React.FC = () => (
+  <div className="w-full min-h-[40vh] flex items-center justify-center py-12" aria-busy="true" aria-label="Loading content">
+    <div className="flex flex-col items-center gap-3">
+      <div className="w-7 h-7 border-2 border-[#0c5253] border-t-transparent rounded-full animate-spin"></div>
+      <span className="text-xs font-semibold text-stone-500 uppercase tracking-wider">Loading Practice Information...</span>
+    </div>
+  </div>
+);
 
 const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation();
@@ -46,16 +65,18 @@ const MainRouter: React.FC = () => {
       {/* Global Header */}
       <Header />
 
-      {/* Main Content Area */}
+      {/* Main Content Area with Code-Split Suspense Boundary */}
       <main id="main-content" className="grow">
-        <Routes>
-          <Route path="/" element={<HomeView />} />
-          <Route path="/about" element={<AboutView />} />
-          <Route path="/assessments" element={<AssessmentsCatalogView />} />
-          <Route path="/assessments/:id" element={<AssessmentDetailView />} />
-          <Route path="/contact" element={<ContactBookingView />} />
-          <Route path="*" element={<NotFoundView />} />
-        </Routes>
+        <Suspense fallback={<ViewSuspenseFallback />}>
+          <Routes>
+            <Route path="/" element={<HomeView />} />
+            <Route path="/about" element={<AboutView />} />
+            <Route path="/assessments" element={<AssessmentsCatalogView />} />
+            <Route path="/assessments/:id" element={<AssessmentDetailView />} />
+            <Route path="/contact" element={<ContactBookingView />} />
+            <Route path="*" element={<NotFoundView />} />
+          </Routes>
+        </Suspense>
       </main>
 
       {/* Mobile Floating Quick Contact Bar (Mobile-Only for fast touch access) */}

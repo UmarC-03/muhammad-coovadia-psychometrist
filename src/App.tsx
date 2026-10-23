@@ -12,8 +12,9 @@ import { SEOHead } from './components/SEOHead';
 import { MessageSquare, Phone } from 'lucide-react';
 import { PRACTICE_INFO } from './data/practiceData';
 
-// Code-split route components via React.lazy to eliminate main thread blocking & slash initial bundle size
-const HomeView = lazy(() => import('./views/HomeView').then((m) => ({ default: m.HomeView })));
+import { HomeView } from './views/HomeView';
+
+// Code-split secondary route components via React.lazy to eliminate main thread blocking & slash bundle size
 const AboutView = lazy(() => import('./views/AboutView').then((m) => ({ default: m.AboutView })));
 const AssessmentsCatalogView = lazy(() =>
   import('./views/AssessmentsCatalogView').then((m) => ({ default: m.AssessmentsCatalogView }))

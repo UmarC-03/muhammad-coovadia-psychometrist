@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from '../context/NavigationContext';
 import { PRACTICE_INFO, ASSESSMENTS } from '../data/practiceData';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
-import practiceLogo from '../assets/Logo (Transparant).png';
 
 export const Footer: React.FC = () => {
   return (
@@ -14,7 +13,7 @@ export const Footer: React.FC = () => {
           <div className="flex items-center gap-4">
             <div className="w-14 h-14 sm:w-16 sm:h-16 flex-shrink-0 flex items-center justify-center">
               <img 
-                src={practiceLogo} 
+                src="/logo.svg" 
                 alt="Muhammad Coovadia Registered Psychometrist Logo" 
                 width={64} 
                 height={64} 
@@ -64,7 +63,7 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-3.5">
               <div className="w-14 h-14 sm:w-16 sm:h-16 flex-shrink-0 flex items-center justify-center">
                 <img 
-                  src={practiceLogo} 
+                  src="/logo.svg" 
                   alt="Muhammad Coovadia Registered Psychometrist Logo" 
                   width={64} 
                   height={64} 

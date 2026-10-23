@@ -13,7 +13,6 @@ import {
   Calendar,
   CheckSquare
 } from 'lucide-react';
-import practiceLogo from '../assets/Logo (Transparant).png';
 import portraitImg from '../assets/Portrait.jpg';
 
 export const HomeView: React.FC = () => {
@@ -101,12 +100,13 @@ export const HomeView: React.FC = () => {
                   <div className="shrink-0 flex items-center justify-center">
                     <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-lg overflow-hidden border-2 border-[#0c5253] shadow-md bg-stone-900">
                       <img 
-                        src={portraitImg} 
+                        src="/portrait.jpg" 
                         alt="Muhammad Coovadia - Registered Psychometrist in Norwood, Johannesburg" 
                         width={176}
                         height={176}
                         loading="eager"
                         decoding="async"
+                        fetchPriority="high"
                         className="w-full h-full object-cover object-center"
                       />
                     </div>

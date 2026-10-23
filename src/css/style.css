@@ -12,8 +12,7 @@
   font-weight: 400;
   font-display: swap;
   src: local('Glacial Indifference'), local('GlacialIndifference-Regular'),
-       url('/fonts/GlacialIndifference-Regular.woff') format('woff'),
-       url('https://fonts.cdnfonts.com/s/19355/GlacialIndifference-Regular.woff') format('woff');
+       url('/fonts/GlacialIndifference-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -22,8 +21,7 @@
   font-weight: 700;
   font-display: swap;
   src: local('Glacial Indifference Bold'), local('GlacialIndifference-Bold'),
-       url('/fonts/GlacialIndifference-Bold.woff') format('woff'),
-       url('https://fonts.cdnfonts.com/s/19355/GlacialIndifference-Bold.woff') format('woff');
+       url('/fonts/GlacialIndifference-Bold.woff') format('woff');
 }
 
 /* Blanka Geometric Monogram Webfont */
@@ -33,8 +31,7 @@
   font-weight: 400;
   font-display: swap;
   src: local('Blanka'), local('Blanka-Regular'),
-       url('/fonts/Blanka-Regular.woff') format('woff'),
-       url('https://fonts.cdnfonts.com/s/18915/Blanka-Regular.woff') format('woff');
+       url('/fonts/Blanka-Regular.woff') format('woff');
 }
 
 /* 2. ROOT BRAND DESIGN TOKENS */

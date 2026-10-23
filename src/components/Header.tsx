@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigation, Link } from '../context/NavigationContext';
 import { PRACTICE_INFO } from '../data/practiceData';
 import { Menu, X, Calendar } from 'lucide-react';
-import practiceLogo from '../assets/Logo (Transparant).png';
 
 export const Header: React.FC = () => {
   const { currentRoute, navigate } = useNavigation();
@@ -38,10 +37,13 @@ export const Header: React.FC = () => {
           {/* Practice Official Transparent Logo */}
           <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 flex-shrink-0 flex items-center justify-center">
             <img 
-              src={practiceLogo} 
+              src="/logo.svg" 
               alt="Muhammad Coovadia Psychometrist Logo" 
               width={128}
               height={128}
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
               className="w-full h-full object-contain filter group-hover:brightness-110 transition-transform duration-200 group-hover:scale-105 drop-shadow-xs"
               id="header-brand-logo-img"
             />

@@ -31,5 +31,8 @@
 4. **Scoring & Interpretation**: Norm-referenced statistical scoring and psychometric analysis.
 5. **Feedback & Deliverables**: In-depth written diagnostic report and dedicated 1-on-1 in-person feedback consultation.
 
-## Full Context & Extended Guidance
-- [Full LLMs Specification & Practice Guide](https://muhammad-coovadia-psychometrist.vercel.app/llms-full.txt): Comprehensive documentation including dimensions measured, preparation instructions, pricing framework, and ethical compliance for AI agents and LLMs.
+## Ethical & Statutory Standards
+- Registered under the Health Professions Council of South Africa (HPCSA PMT 0104167) and Board of Health Care Funders (PR 0071253).
+- Strictly follows HPCSA ethical codes for psychometric assessment, data privacy, and objective normative test interpretation.
+- All testing instruments are validated for South African multicultural and multi-lingual normative populations.
+- All assessments are strictly in-person, controlled, and paper-based in the Norwood, Johannesburg testing rooms to guarantee test validity and diagnostic integrity.

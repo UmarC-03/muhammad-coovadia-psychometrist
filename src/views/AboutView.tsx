@@ -11,7 +11,6 @@ import {
   Calendar,
   CheckSquare
 } from 'lucide-react';
-import practiceLogo from '../assets/Logo (Transparant).png';
 import portraitImg from '../assets/Portrait.jpg';
 
 export const AboutView: React.FC = () => {

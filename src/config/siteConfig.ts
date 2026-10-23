@@ -36,7 +36,7 @@ export const SITE_CONFIG = {
   },
   openingHours: 'Mo-Fr 08:30-17:00, Sa 09:00-13:00',
   defaultOgImage: '/portrait.jpg',
-  defaultLogo: '/assets/logo.png',
+  defaultLogo: '/logo.svg',
   locale: 'en_ZA',
 };
 

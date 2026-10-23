@@ -11,7 +11,6 @@ import {
   Calendar,
   CheckSquare
 } from 'lucide-react';
-import portraitImg from '../assets/Portrait.jpg';
 
 export const AboutView: React.FC = () => {
   return (
@@ -28,7 +27,7 @@ export const AboutView: React.FC = () => {
             <div className="lg:col-span-4 flex flex-col items-center sm:items-start text-center sm:text-left space-y-3">
               <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-xl overflow-hidden border-2 border-[#0c5253] shadow-lg bg-stone-900 group">
                 <img 
-                  src={portraitImg} 
+                  src="/portrait.jpg" 
                   alt="Muhammad Coovadia - Registered Psychometrist in Norwood, Johannesburg" 
                   width={176}
                   height={176}
